@@ -1,0 +1,56 @@
+.app {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #444;
+}
+
+.board {
+  width: 512px;
+  height: 512px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.cell {
+  width: 64px;
+  height: 64px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.black {
+  background-color: #769656;
+}
+
+.white {
+  background-color: #eeeed2;
+}
+
+.cell img {
+  width: 54px;
+  height: 54px;
+  position: relative;
+}
+
+.selected {
+  background-color: #baca44;
+}
+
+.available {
+  height: 15px;
+  width: 15px;
+  border-radius: 50%;
+  background-color: rgba(61, 81, 61, 0.3058823529);
+}
+
+.availableToKill {
+  position: absolute;
+  height: 64px;
+  width: 64px;
+  border-radius: 45%;
+  background: radial-gradient(circle at center, transparent 39%, rgba(61, 81, 61, 0.3058823529) 84%);
+}
