@@ -12,7 +12,17 @@ export class Pawn extends Figure {
 
    canMove(target: Cell): boolean {
       if (!super.canMove(target)) return false;
-      // some code
+
+      // const x = this.cell.x;
+      // const y = this.cell.y;
+      // const newX = target.x;
+      // const newY = target.y;
+      // const color = this.color;
+
+      // if (color === Colors.BLACK && newY === y && newX === x + 1 && !target.figure)
+      //    return true;
+      // if (color === Colors.WHITE && newY === y && newX === x - 1 && !target.figure)
+      //    return true;
       return true;
    }
 }

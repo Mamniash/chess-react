@@ -34,6 +34,7 @@ const BoardComponent: FC<BoardProps> = ({ board, setBoard }) => {
    function updateBoard() {
       const newBoard = board.getCopyBoard();
       setBoard(newBoard);
+      console.log(board);
    }
 
    return (
@@ -45,7 +46,7 @@ const BoardComponent: FC<BoardProps> = ({ board, setBoard }) => {
                      click={click}
                      cell={cell}
                      key={cell.id}
-                     selected={cell.x === selectedCell?.x && cell.y === selectedCell?.y}
+                     selected={!!cell.figure && cell.x === selectedCell?.x && cell.y === selectedCell?.y}
                   />
                )}
             </React.Fragment>
